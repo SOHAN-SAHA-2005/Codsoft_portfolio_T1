@@ -171,6 +171,11 @@ section {
 }
 
 .section__pic-container {
+}
+.section__pic-container img {
+  border: 4px solid #f2ae77; /* light purple border for subtle effect */
+  border-radius: 50%;
+  box-sizing: border-box;
   display: flex;
   height: 400px;
   width: 400px;
@@ -338,17 +343,20 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 10rem;
-  justify-content: space-around;
+  min-width: 120px;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
